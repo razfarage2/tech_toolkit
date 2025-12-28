@@ -18,7 +18,6 @@ class WheelRigUI:
         cmds.separator(h=5)
         cmds.button(l="1. Build Skeleton", c=self.build_skeleton, bgc=[0.4, 0.5, 0.8])
         cmds.button(l="2. Add Rotation", c=self.rotation, bgc=[0.8, 0.5, 0.4])
-        cmds.button(l="3. Apply antCGI Logic", c=self.apply_logic, bgc=[0.2, 0.6, 0.4])
 
     def get_proportions(self, mesh):
         bbox = cmds.exactWorldBoundingBox(mesh)
@@ -71,3 +70,4 @@ class WheelRigUI:
 
     def apply_logic(self, *args):
         pass
+
